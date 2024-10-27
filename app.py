@@ -5,10 +5,10 @@ import pickle
 app = Flask(__name__)
 
 # Load the trained model and vectorizer
-with open('model/spam_classifier.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+with open('/home/spamDetection/mysite/model/spam_classifier.pkl', 'rb') as model_file:
+  model = pickle.load(model_file)
 
-with open('model/vectorizer.pkl', 'rb') as vectorizer_file:
+with open('/home/spamDetection/mysite/model/vectorizer.pkl', 'rb') as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
 # Route for the homepage
